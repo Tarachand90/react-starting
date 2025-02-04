@@ -1,21 +1,23 @@
-import React from 'react'
-import { CORE_CONCEPTS } from '../datas/data'
-import CoreConcepts from './CoreConcepts'
+import React from 'react';
+import { CORE_CONCEPTS } from '../datas/data';
+import CoreConcepts from './CoreConcepts';
 
 const CoreConceptList = () => {
   return (
     <ul>
-      {
-      CORE_CONCEPTS.map((concept, index) => {
+      {CORE_CONCEPTS.map((concept, index) => {
         return (
-            <li key={index}>
-            <CoreConcepts  title={concept.title} description={concept.description} image={concept.image}/>
-        </li>
-        )
-       
+          <li key={index}>
+            <CoreConcepts
+              title={concept.title}
+              description={concept.description}
+              image={concept.image}
+            />
+          </li>
+        );
       })}
     </ul>
-  )
-}
+  );
+};
 
-export default CoreConceptList
+export default CoreConceptList;
