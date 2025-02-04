@@ -1,15 +1,13 @@
-import React from 'react'
+import CoreConceptsType from '../components/CoreConceptsType';
 
-import CoreConceptsType from "../components/CoreConceptsType";
-
-const CoreConcepts = ({title, description, image}: CoreConceptsType) => {
+const CoreConcepts = ({ title, description, image }: CoreConceptsType) => {
   return (
     <div>
-      <img src={image} alt='image' />
+      <img src={image} alt="Image representing core React concepts" />
       {title}
       {description}
     </div>
-  )
-}
+  );
+};
 
-export default CoreConcepts
+export default CoreConcepts;
