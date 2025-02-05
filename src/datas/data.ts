@@ -4,7 +4,7 @@ import jsxImg from '../assets/jsx-ui.png';
 import stateImg from '../assets/state-mgmt.png';
 import { CoreConceptsType } from '../components/core-concepts/CoreConceptsType';
 
-import { Example } from './Example';
+import { Example } from '../components/examples/Example';
 
 export const CORE_CONCEPTS: CoreConceptsType[] = [
   {
