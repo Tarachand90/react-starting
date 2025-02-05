@@ -150,3 +150,9 @@ button span.active {
 #tab-content code {
   font-size: 1rem;
 }
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

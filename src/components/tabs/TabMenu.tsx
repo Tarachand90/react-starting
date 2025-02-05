@@ -10,7 +10,7 @@ const TabMenu = ({ onTabSelect, selectedTab }: TabMenuProps) => {
 
   return (
     <menu>
-      <div>
+      <div className="button-container">
         {tabs.map((tab) => (
           <TabButton
             key={tab}
