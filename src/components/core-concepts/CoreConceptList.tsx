@@ -1,4 +1,4 @@
-import { CORE_CONCEPTS } from '../datas/data';
+import { CORE_CONCEPTS } from '../../datas/data';
 import CoreConcepts from './CoreConcepts';
 
 const CoreConceptList = () => {

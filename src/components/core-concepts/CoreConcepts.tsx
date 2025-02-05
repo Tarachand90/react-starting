@@ -1,4 +1,4 @@
-import CoreConceptsType from '../components/CoreConceptsType';
+import { CoreConceptsType } from './CoreConceptsType';
 
 const CoreConcepts = ({ title, description, image }: CoreConceptsType) => {
   return (
