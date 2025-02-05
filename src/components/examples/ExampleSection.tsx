@@ -6,6 +6,7 @@ interface ExampleSectionProps {
 }
 
 const ExampleSection = ({ tabContent }: ExampleSectionProps) => {
+  
   const currentExample: Example =
     EXAMPLES[tabContent.toLocaleLowerCase() as keyof typeof EXAMPLES];
 

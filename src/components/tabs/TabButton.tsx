@@ -1,10 +1,10 @@
 import { TabButtonProps } from './TabButtonProps';
 
-const TabButton = ({ children, onButtonClick }: TabButtonProps) => {
+const TabButton = ({ children, onButtonClick, isSelected }: TabButtonProps) => {
   return (
     <li>
       <button onClick={onButtonClick}>
-        <span>{children}</span>
+        <span className={isSelected ? 'active' : ''}>{children}</span>
       </button>
     </li>
   );
