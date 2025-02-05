@@ -3,8 +3,11 @@ import Header from './components/Header';
 import TabMenu from './components/tabs/TabMenu';
 
 function App() {
+  let tabContent = 'Please click a button';
+
   const onClickHandler = (selectedButton: string) => {
     // Selected button can be Components, JSX, Props and State
+    tabContent = selectedButton;
     console.log(selectedButton);
   };
 
@@ -17,6 +20,7 @@ function App() {
           <CoreConceptList />
           <h2>Examples</h2>
           <TabMenu onTabSelect={onClickHandler} />
+          {tabContent}
         </section>
       </main>
     </div>
