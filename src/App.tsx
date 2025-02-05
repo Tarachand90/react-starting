@@ -1,13 +1,14 @@
+import { useState } from 'react';
 import CoreConceptList from './components/core-concepts/CoreConceptList';
 import Header from './components/Header';
 import TabMenu from './components/tabs/TabMenu';
 
 function App() {
-  let tabContent = 'Please click a button';
+  const [tabContent, setTabContent] = useState<string>('Please click a button');
 
   const onClickHandler = (selectedButton: string) => {
     // Selected button can be Components, JSX, Props and State
-    tabContent = selectedButton;
+    setTabContent(selectedButton);
     console.log(selectedButton);
   };
 
@@ -20,7 +21,7 @@ function App() {
           <CoreConceptList />
           <h2>Examples</h2>
           <TabMenu onTabSelect={onClickHandler} />
-          {tabContent}
+          <span>{tabContent}</span>
         </section>
       </main>
     </div>
