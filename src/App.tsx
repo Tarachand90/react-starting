@@ -1,9 +1,9 @@
-import CoreConceptList from './components/CoreConceptList';
+import CoreConceptList from './components/core-concepts/CoreConceptList';
 import Header from './components/Header';
-import TabButton from './components/TabButton';
+import TabMenu from './components/tabs/TabMenu';
 
 function App() {
-  const onClickHandler = (selectedButton) => {
+  const onClickHandler = (selectedButton: string) => {
     // Selected button can be Components, JSX, Props and State
     console.log(selectedButton);
   };
@@ -16,21 +16,7 @@ function App() {
           <h2>Time to get started!</h2>
           <CoreConceptList />
           <h2>Examples</h2>
-          <menu>
-            <TabButton onButtonClick={() => onClickHandler('Components')}>
-              Components
-            </TabButton>
-            <TabButton onButtonClick={() => onClickHandler('JSX')}>
-              JSX
-            </TabButton>
-            <TabButton onButtonClick={() => onClickHandler('Props')}>
-              Props
-            </TabButton>
-            <TabButton onButtonClick={() => onClickHandler('State')}>
-              State
-            </TabButton>
-          </menu>
-          Dynamic Content
+          <TabMenu onTabSelect={onClickHandler} />
         </section>
       </main>
     </div>

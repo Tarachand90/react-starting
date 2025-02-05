@@ -3,7 +3,7 @@ import propsImg from '../assets/config.png';
 import jsxImg from '../assets/jsx-ui.png';
 import stateImg from '../assets/state-mgmt.png';
 
-import CoreConceptsType from '../components/CoreConceptsType';
+import CoreConceptsType from '../components/core-concepts/CoreConceptsType';
 
 export const CORE_CONCEPTS: CoreConceptsType[] = [
   {

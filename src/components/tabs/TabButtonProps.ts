@@ -1,8 +1,6 @@
 import { ReactNode } from 'react';
 
-interface TabButtonProps {
+export interface TabButtonProps {
   children: ReactNode;
   onButtonClick: () => void;
 }
-
-export default TabButtonProps;
