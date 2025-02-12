@@ -1,21 +1,16 @@
 import { CORE_CONCEPTS } from '../../datas/data';
+import Sections from '../utils/Sections';
 import CoreConcepts from './CoreConcepts';
 
 const CoreConceptList = () => {
   return (
-    <ul>
-      {CORE_CONCEPTS.map((concept, index) => {
-        return (
-          <li key={index}>
-            <CoreConcepts
-              title={concept.title}
-              description={concept.description}
-              image={concept.image}
-            />
-          </li>
-        );
-      })}
-    </ul>
+    <Sections title="Core Concepts">
+      <ul>
+        {CORE_CONCEPTS.map((concept) => (
+          <CoreConcepts key={concept.title} {...concept} />
+        ))}
+      </ul>
+    </Sections>
   );
 };
 
