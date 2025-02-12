@@ -28,7 +28,7 @@ const TabMenu = ({ onTabSelect, selectedTab }: TabMenuProps) => {
 
   return (
     <Sections title="Examples">
-      <Tabs buttons={tabButtons} buttonsContainer="menu"></Tabs>
+      <Tabs buttons={tabButtons}></Tabs>
     </Sections>
   );
 };
