@@ -10,17 +10,18 @@ const TabMenu = ({ onTabSelect, selectedTab }: TabMenuProps) => {
 
   return (
     <menu>
-      <div className="button-container">
+      <ul className="button-container">
         {tabs.map((tab) => (
           <TabButton
             key={tab}
             onButtonClick={() => onTabSelect(tab)}
             isSelected={selectedTab === tab}
+            aria-selected={selectedTab === tab}
           >
             {tab}
           </TabButton>
         ))}
-      </div>
+      </ul>
     </menu>
   );
 };
