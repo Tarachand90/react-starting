@@ -131,7 +131,7 @@ main h2 {
 
 /* #examples menu button.active  */
 /* changes accordingly to my requirement*/
-button span.active {
+button.active {
   background-color: #7925d3;
   color: #ebe7ef;
 }
