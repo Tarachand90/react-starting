@@ -21,7 +21,6 @@ function App() {
         <section id="core-concepts">
           <h2>Time to get started!</h2>
           <CoreConceptList />
-          <h2>Examples</h2>
           <div>
             <TabMenu onTabSelect={onClickHandler} selectedTab={selectedTab} />
             <ExampleSection tabContent={tabContent} />
