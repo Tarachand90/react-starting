@@ -3,6 +3,7 @@ import CoreConceptList from './components/core-concepts/CoreConceptList';
 import Header from './components/Header';
 import TabMenu from './components/tabs/TabMenu';
 import ExampleSection from './components/examples/ExampleSection';
+import ButtonsApp from './components/buttons/ButtonsApp';
 
 function App() {
   const [tabContent, setTabContent] = useState<string>('');
@@ -15,7 +16,7 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -27,7 +28,8 @@ function App() {
           </div>
         </section>
       </main>
-    </div>
+      <ButtonsApp />
+    </>
   );
 }
 
